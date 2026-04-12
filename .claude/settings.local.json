@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(printf '\\\\n')",
+      "Bash(npx create-vite@latest . --template react-ts)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(npx create-vite@latest hrm-quiz --template react-ts)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(''''dependencies:'''', list\\(d.get\\(''''dependencies'''',{}\\).keys\\(\\)\\)\\); print\\(''''devDependencies:'''', list\\(d.get\\(''''devDependencies'''',{}\\).keys\\(\\)\\)\\)\")",
+      "Bash(npm run:*)",
+      "Bash(npx electron-builder:*)",
+      "Bash(CSC_IDENTITY_AUTO_DISCOVERY=false WIN_CSC_LINK=\"\" npx electron-builder --win portable --x64)",
+      "Bash(npx @electron/packager . \"HRM전문가 퀴즈\" --platform=win32 --arch=x64 --out=release --overwrite --asar --app-version=1.0.0)",
+      "Bash(powershell -Command \"\\(Get-Item ''''D:/vibecoding/practice/hrm-quiz/release/HRM전문가 퀴즈-win32-x64''''\\).FullName\")",
+      "Bash(powershell -Command \"Get-ChildItem 'D:\\\\vibecoding\\\\practice\\\\hrm-quiz\\\\release' | Select-Object Name, Length\")",
+      "Bash(powershell -Command \"Get-ChildItem 'D:\\\\vibecoding\\\\practice\\\\hrm-quiz\\\\release\\\\HRM전문가 퀴즈-win32-x64' | Select-Object Name | head -15\")",
+      "Bash(powershell -Command \"\n\\\\$dirs = Get-ChildItem 'D:\\\\vibecoding\\\\practice\\\\hrm-quiz\\\\release' -Directory\nforeach \\(\\\\$d in \\\\$dirs\\) {\n  Write-Host \\\\$d.FullName\n  Get-ChildItem \\\\$d.FullName | Select-Object -First 8 | ForEach-Object { Write-Host '  ' \\\\$_.Name }\n}\n\")",
+      "Bash(powershell -Command \"\n\\\\$dir = \\(Get-ChildItem 'D:\\\\vibecoding\\\\practice\\\\hrm-quiz\\\\release' -Directory\\)[0]\n\\\\$exe = Get-ChildItem \\\\$dir.FullName -Filter '*.exe' | Select-Object -First 1\nWrite-Host 'EXE:' \\\\$exe.FullName\nWrite-Host 'SIZE:' \\([math]::Round\\(\\\\$exe.Length/1MB, 1\\)\\) 'MB'\n\\\\$totalSize = \\(Get-ChildItem \\\\$dir.FullName -Recurse | Measure-Object -Property Length -Sum\\).Sum\nWrite-Host 'TOTAL:' \\([math]::Round\\(\\\\$totalSize/1MB, 1\\)\\) 'MB'\n\")",
+      "Bash(curl:*)",
+      "Bash(ls D:/vibecoding/practice/제40회_HRM전문가 문제지*)",
+      "Bash(python3 -c \"import pdfplumber; pdf = pdfplumber.open\\(''D:/vibecoding/practice/제40회_HRM전문가 문제지.pdf''\\); print\\(len\\(pdf.pages\\), ''pages''\\); print\\(pdf.pages[0].extract_text\\(\\)[:2000]\\)\")",
+      "Bash(python -c \"import pdfplumber; pdf = pdfplumber.open\\(''D:/vibecoding/practice/제40회_HRM전문가 문제지.pdf''\\); print\\(len\\(pdf.pages\\), ''pages''\\); print\\(pdf.pages[0].extract_text\\(\\)[:2000]\\)\")",
+      "Bash(pip install:*)",
+      "Bash(python:*)"
+    ]
+  }
+}

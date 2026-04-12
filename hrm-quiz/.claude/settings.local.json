@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(npx tsc:*)",
+      "Bash(ls D:/vibecoding/practice/hrm-quiz/src/data/questions.backup.*.ts)",
+      "Bash(node:*)",
+      "Bash(where pdftotext:*)",
+      "Bash(where mutool:*)",
+      "Bash(node -e \"require\\(''pdf-parse''\\)\")",
+      "Bash(pdftotext \"D:/vibecoding/practice/제40회_HRM전문가 문제지.pdf\" -)",
+      "Bash(pdftotext \"D:/vibecoding/practice/제41회_HRM전문가 문제지.pdf\" -)"
+    ]
+  }
+}
