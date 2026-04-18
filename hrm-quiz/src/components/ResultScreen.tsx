@@ -189,20 +189,6 @@ function GradeBadge({ grade }: { grade: string }) {
   );
 }
 
-// ── 유틸 ─────────────────────────────────────────────────────────────────
-
-function formatTime(seconds: number): string {
-  if (seconds > 3599) {
-    const hh = String(Math.floor(seconds / 3600)).padStart(2, '0');
-    const mm = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
-    const ss = String(seconds % 60).padStart(2, '0');
-    return `${hh}:${mm}:${ss}`;
-  }
-  const mm = String(Math.floor(seconds / 60)).padStart(2, '0');
-  const ss = String(seconds % 60).padStart(2, '0');
-  return `${mm}:${ss}`;
-}
-
 // ── 섹션 래퍼 ────────────────────────────────────────────────────────────
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
@@ -217,8 +203,6 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 // ── 메인 컴포넌트 ─────────────────────────────────────────────────────────
 
 export default function ResultScreen({ state, grade, gradeMessage, formattedTime, onRestart }: ResultScreenProps) {
-  const gradeStyle = GRADE_STYLE[grade] ?? GRADE_STYLE['D'];
-
   const subjectStats = (() => {
     let hrmCorrect = 0, hrmTotal = 0;
     let laborCorrect = 0, laborTotal = 0;
