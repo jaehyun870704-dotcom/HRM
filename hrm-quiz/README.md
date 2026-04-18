@@ -2,7 +2,7 @@
 
 한국공인노무사회 HRM전문가 역량인증 시험 대비 퀴즈 게임입니다. 기출문제(제40·41회)와 핵심 이론 문제 20개로 구성되며, 즉시 피드백과 오답 복습 기능을 제공합니다.
 
-> **GitHub 저장소**: [jaehyun870704-dotcom/HRM](https://github.com/jaehyun870704-dotcom/https---github.com-jaehyun870704-dotcom-HRM)
+> **바로가기**: [퀴즈 시작하기](https://jaehyun870704-dotcom.github.io/HRM/) &nbsp;|&nbsp; **GitHub 저장소**: [jaehyun870704-dotcom/HRM](https://github.com/jaehyun870704-dotcom/HRM)
 
 ## 기술 스택
 
